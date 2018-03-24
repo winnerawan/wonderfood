@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <FrameLayout
+        android:background="@color/black"
+        android:id="@+id/frame_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/bg"
+            android:scaleType="centerCrop" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_weight="1.0"
+        android:gravity="left"
+        android:paddingLeft="16dp"
+        android:paddingTop="2dp">
+
+        <ImageView
+            android:id="@+id/image_logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:src="@drawable/logo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fbl"
+        android:layout_marginBottom="100.0dip"
+        android:gravity="center">
+
+        <!--<ImageView-->
+            <!--android:id="@+id/head"-->
+            <!--android:layout_width="150.0dip"-->
+            <!--android:layout_height="60.0dip"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:background="@drawable/wonderfood_logo"-->
+            <!--android:textColor="@color/Tex" />-->
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/pb_loading"
+            style="@style/AVLoadingIndicatorView"
+            app:indicatorColor="@color/colorAccent"
+            app:indicatorName="LineScaleIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fbl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/or"
+        android:layout_marginBottom="8.0dip"
+        android:layout_marginLeft="60.0dip"
+        android:layout_marginRight="60.0dip"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10.0dip">
+
+    </LinearLayout>
+
+    <net.winnerawan.wonderfood.ui.helper.LatoTextView
+        android:id="@+id/or"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linear"
+        android:gravity="center"
+        android:lines="1"
+        android:textColor="@color/textSub" />
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnSignIn"
+        android:layout_marginBottom="16.0dip"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/email1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black">
+
+            <net.winnerawan.wonderfood.ui.helper.LatoEditText
+                android:id="@+id/txtEmail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="46.0dip"
+                android:layout_marginRight="46.0dip"
+                android:background="#00000000"
+                android:drawableLeft="@drawable/user"
+                android:drawablePadding="12.0dip"
+                android:gravity="left"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:lines="1"
+                android:padding="14.0dip"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="@dimen/text" />
+        </android.support.design.widget.TextInputLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_marginLeft="56.0dip"
+            android:layout_marginRight="56.0dip"
+            android:background="@color/black" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black">
+
+            <net.winnerawan.wonderfood.ui.helper.LatoEditText
+                android:id="@+id/txtPassword"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="46.0dip"
+                android:layout_marginRight="46.0dip"
+                android:background="#00000000"
+                android:drawableLeft="@drawable/pass"
+                android:drawablePadding="16.0dip"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="14.0dip"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="@dimen/text" />
+        </android.support.design.widget.TextInputLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_marginLeft="56.0dip"
+            android:layout_marginRight="56.0dip"
+            android:background="@color/black" />
+
+        <LinearLayout
+            android:id="@+id/linear4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20.0dip"
+            android:layout_marginTop="12.0dip"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="50.0dip"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkbocremember"
+                    android:layout_width="wrap_content"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    android:checked="false" />
+
+                <net.winnerawan.wonderfood.ui.helper.LatoTextView
+                    android:id="@+id/remember"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/textsub" />
+            </LinearLayout>
+
+            <net.winnerawan.wonderfood.ui.helper.LatoTextView
+                android:id="@+id/forgotpass"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="50.0dip"
+                android:gravity="right"
+                android:text="Forgot password?"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsub" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnSignIn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/signinline"
+        android:layout_marginBottom="26.0dip"
+        android:layout_marginLeft="60.0dip"
+        android:layout_marginRight="60.0dip"
+        android:layout_marginTop="16.0dip"
+        android:background="@drawable/bg_signin"
+        android:gravity="center"
+        android:padding="10.0dip"
+        android:text="Sign in"
+        android:textColor="#ffffffff"
+        android:textSize="@dimen/text" />
+
+    <LinearLayout
+        android:id="@+id/signinline"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="35.0dip"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <net.winnerawan.wonderfood.ui.helper.LatoTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="3.0dip"
+            android:gravity="center"
+            android:text="Not a Member?"
+            android:textColor="@color/txt_result"
+            android:textSize="@dimen/textsub" />
+
+        <net.winnerawan.wonderfood.ui.helper.LatoTextView
+            android:id="@+id/linkSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="3.0dip"
+            android:gravity="center"
+            android:text="@string/signup"
+            android:textStyle="bold"
+            android:textColor="@color/White"
+            android:textSize="@dimen/textsub" />
+    </LinearLayout>
+
+</RelativeLayout>

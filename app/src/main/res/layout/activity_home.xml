@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/toolbar_home" />
+
+    </RelativeLayout>
+
+    <com.astuetz.PagerSlidingTabStrip
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:elevation="5dp"
+        app:pstsIndicatorColor="@color/colorAccent"
+        app:pstsIndicatorHeight="2dip"
+        app:pstsShouldExpand="true"
+        app:pstsTextAllCaps="true"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/layout_action"
+            android:layout_width="fill_parent"
+            android:layout_height="75dp"
+            android:layout_alignParentBottom="true"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/place_order"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:background="?selectableItemBackground"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/action_place_order" />
+
+                    <net.winnerawan.wonderfood.ui.helper.LatoTextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5.0dip"
+                        android:gravity="center"
+                        android:text="@string/action_place_order"
+                        android:textAllCaps="true"
+                        android:textSize="11sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent"
+                    android:background="#ffe7e8e7" />
+
+                <LinearLayout
+                    android:id="@+id/delivery_order"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:background="?selectableItemBackground"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/action_delivery_order" />
+
+                    <net.winnerawan.wonderfood.ui.helper.LatoTextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5.0dip"
+                        android:gravity="center"
+                        android:text="@string/action_delivery_order"
+                        android:textAllCaps="true"
+                        android:textSize="11sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent"
+                    android:background="#ffe7e8e7" />
+
+                <LinearLayout
+                    android:id="@+id/book_table"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:background="?selectableItemBackground"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/action_book_table" />
+
+                    <net.winnerawan.wonderfood.ui.helper.LatoTextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5.0dip"
+                        android:gravity="center"
+                        android:text="@string/action_book_table"
+                        android:textAllCaps="true"
+                        android:textSize="11sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent"
+                    android:background="#ffe7e8e7" />
+
+                <LinearLayout
+                    android:id="@+id/birthday_plan"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:background="?selectableItemBackground"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/action_birthday_plan" />
+
+                    <net.winnerawan.wonderfood.ui.helper.LatoTextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5.0dip"
+                        android:gravity="center"
+                        android:text="@string/action_birthday_plan"
+                        android:textAllCaps="true"
+                        android:textSize="11sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="#ffe7e8e7" />
+
+        </LinearLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_above="@id/layout_action"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v4.view.ViewPager>
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lyt_img"
+        android:layout_width="fill_parent"
+        android:layout_height="110.0dip"
+        android:orientation="horizontal"
+        android:padding="16.0dip">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="vertical">
+
+            <net.winnerawan.wonderfood.ui.helper.LatoTextView
+                android:id="@+id/name"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:maxLines="1"
+                android:textColor="@color/yellow"
+                android:textSize="16sp" />
+
+            <net.winnerawan.wonderfood.ui.helper.LatoTextView
+                android:id="@+id/price"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:paddingTop="6.0dip"
+                android:textColor="@color/grey"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="16.0dip"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <net.winnerawan.wonderfood.ui.helper.LatoTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4.0dip"
+                android:textColor="@color/yellow"
+                android:textSize="13dp" />
+
+            <net.winnerawan.wonderfood.ui.helper.LatoTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/yellow"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:visibility="gone"
+            android:id="@+id/add"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.3">
+
+            <ImageView
+                android:layout_width="25.0dip"
+                android:layout_height="25.0dip"
+                android:layout_gravity="center"
+                android:background="@drawable/plus_btn" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/box_quantity"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_quantity"
+                android:orientation="vertical"
+                android:padding="13.0dip">
+
+                <ImageView
+                    android:id="@+id/plus"
+                    android:layout_width="10.0dip"
+                    android:layout_height="10.0dip"
+                    android:src="@drawable/plus"
+                    android:tint="@color/grey" />
+
+                <TextView
+                    android:id="@+id/quantity"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingBottom="7.0dip"
+                    android:paddingTop="7.0dip"
+                    android:text="0"
+                    android:textStyle="bold"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:id="@+id/min"
+                    android:layout_width="10.0dip"
+                    android:layout_height="10.0dip"
+                    android:src="@drawable/minus"
+                    android:tint="@color/grey" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

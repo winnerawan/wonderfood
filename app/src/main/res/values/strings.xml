@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">Wonderfood</string>
+    <!--App Message-->
+    <string name="api_retry_error">Please retry!</string>
+    <string name="api_default_error">Something wrong happened!</string>
+    <string name="some_error">Some Error Occurred!</string>
+    <string name="connection_error">Internet connection lost!</string>
+    <!--play store-->
+    <string name="app_google_play_store_link">"https://play.google.com/store/apps/details?id="</string>
+    <string name="app_market_link">"market://details?id="</string>
+    <string name="signup"><b><u>Sign Up</u></b></string>
+    <string name="message_empty_email">Please provide a non empty email!</string>
+    <string name="message_invalid_email">Please provide a valid email!</string>
+    <string name="message_empty_password">Please provide a non empty password!</string>
+    <string name="splash_quote_0">Keep Calm and Order Food from Wonderfood!</string>
+    <string name="splash_quote_1">First restourant with Open Kitchen Concept!</string>
+    <string name="message_empty_name">Please provide a non empty username!</string>
+    <string name="message_wrong_credential">Wrong credentials!</string>
+    <string name="my_profile">Account</string>
+    <string name="privacy_policy">Privacy policy</string>
+    <string name="sign_out">Logout</string>
+    <string name="term_condition">Term &amp; Conditions</string>
+    <string name="search">Search</string>
+    <string name="action_place_order">Place order</string>
+    <string name="action_delivery_order">Delivery order</string>
+    <string name="action_book_table">Booking table</string>
+    <string name="action_birthday_plan">Birthday plan</string>
+    <string name="home">Home</string>
+    <string name="history">History</string>
+    <string name="help">Help</string>
+    <string name="more">More</string>
+    <string name="wonderfood_address">
+ADDRESS\nPerum Bumi Mas Blok X-0
+Madiun</string>
+    <string name="explore_menu">Explore Our Menu</string>
+    <string name="special">Especially For You</string>
+    <string name="retry">Retry</string>
+    <string name="please_retry">Please check your internet and retry!</string>
+    <string name="empty_screen">No Menu Found :(</string>
+    <string name="tandc">Term &amp; Conditions</string>
+    <string name="signin"><b><u>Sign In</u></b></string>
+    <string name="message_success_signup">Successfully registered!</string>
+    <string name="message_agree_termandconditions">You must agree term and conditions!</string>
+    <string name="delivery_to">Delivery to…?</string>
+    <string name="setlocation">Set Location</string>
+    <string name="order">Order</string>
+    <string name="scan_table"><u>Scan Barcode on table to set your table!</u></string>
+    <string name="message_camera_permission_granted">Camera permission was granted!</string>
+    <string name="message_camera_permission_denied">Camera permission request was denied!</string>
+    <string name="distance">Distance </string>
+    <string name="kilometers">Kilometers</string>
+    <string name="km">KM</string>
+    <string name="destination">Destination</string>
+    <string name="Rp">Rp</string>
+    <string name="ok">Ok</string>
+    <string name="next">Next</string>
+    <string name="portion">Portion.</string>
+    <string name="cancel_order">Cancel order</string>
+    <string name="cancel_order_message">Are you sure want to cancel order?</string>
+    <string name="menu_empty">Empty</string>
+    <string name="menu_empty_message">You have not selected menu yet!</string>
+    <string name="menu_empty_message_0">Please select at least one menu!</string>
+    <string name="order_received">Thanks for your order</string>
+    <string name="order_received_message">Your order has been received!</string>
+    <string name="added_to_cart">Added to cart</string>
+    <string name="on_progress">On Progress</string>
+    <string name="completed">Completed</string>
+    <string name="empty_transactions">No Transcanctions</string>
+    <string name="empty_transactions_message">Seems you don\'t have any orders in progress</string>
+    <string name="use_wonderfood">Let\'s use <u>Wonderfood</u></string>
+    <string name="about_apps">About Application</string>
+    <string name="result">result</string>
+    <string name="result_for">result for</string>
+    <string name="too_far">Too far!</string>
+    <string name="too_far_message">We\'re sorry, we can\'t ship over 25 Km</string>
+    <string name="cart_empty">Your cart is empty</string>
+    <string name="start_order_now">Start order now!</string>
+</resources>

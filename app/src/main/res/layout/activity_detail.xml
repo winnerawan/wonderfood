@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lyt_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/lyt_semi_transparent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:background="#BF000000"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/image"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    app:civ_border_color="#FFFFFF"
+                    android:layout_margin="8dp"
+                    app:civ_border_width="2dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="16dp"
+                    android:gravity="left"
+                    android:id="@+id/name"
+                    android:layout_marginStart="12dp"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/price"
+                    android:gravity="left"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="12dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/yellow"
+                    android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginBottom="32dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+               <LinearLayout
+                   android:layout_marginTop="10dp"
+                   android:background="@color/yellow"
+                   android:layout_marginBottom="10dp"
+                   android:layout_marginStart="16dp"
+                   android:layout_width="1dp"
+                   android:layout_height="match_parent"/>
+
+                <com.bluejamesbond.text.DocumentView xmlns:ext="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/description"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    ext:documentView_antialias="true"
+                    ext:documentView_cacheConfig="auto_quality"
+                    ext:documentView_hyphen="-"
+                    ext:documentView_lineHeightMultiplier="2.0"
+                    ext:documentView_maxLines="5"
+                    ext:documentView_offsetX="10dp"
+                    ext:documentView_offsetY="10dp"
+                    ext:documentView_insetPadding="10dp"
+                    ext:documentView_insetPaddingBottom="10dp"
+                    ext:documentView_insetPaddingRight="10dp"
+                    ext:documentView_insetPaddingTop="10dp"
+                    ext:documentView_reverse="false"
+                    ext:documentView_textAlignment="justified"
+                    ext:documentView_textColor="@android:color/white"
+                    ext:documentView_textFormat="formatted"
+                    ext:documentView_textSize="14sp"
+                    ext:documentView_textSubPixel="true"
+                    ext:documentView_wordSpacingMultiplier="5.0" />
+            </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/lyt_btn_toggle"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:padding="32dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content">
+
+                    <com.github.clans.fab.FloatingActionButton
+                        android:id="@+id/fab_place"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        app:fab_colorNormal="@color/dark_red"
+                        app:fab_colorPressed="@color/colorAccent"
+                        android:src="@drawable/fab_add"
+                        app:fab_colorRipple="#99FFFFFF"
+                        app:fab_showShadow="false"
+                        android:layout_marginEnd="8dp"
+                        app:fab_shadowColor="@android:color/transparent"
+                        app:fab_shadowRadius="1dp"
+                        app:fab_shadowXOffset="1dp"
+                        app:fab_shadowYOffset="1dp"
+                        app:fab_size="mini"
+                        app:fab_label="AAAAA"
+                        app:fab_progress_color="#FF009688"
+                        app:fab_progress_backgroundColor="#ffffff"
+                        app:fab_progress_indeterminate="false"
+                        app:fab_progress_max="100"
+                        app:fab_progress_showBackground="true"/>
+
+                    <com.github.clans.fab.FloatingActionButton
+                        android:id="@+id/fab_delivery"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        app:fab_colorNormal="@color/light_green"
+                        app:fab_colorPressed="@color/colorAccent"
+                        android:background="@drawable/border_circle_trans"
+                        android:padding="16dp"
+                        android:src="@drawable/fab_add"
+                        app:fab_colorRipple="#99FFFFFF"
+                        app:fab_showShadow="false"
+                        app:fab_shadowColor="#66000000"
+                        app:fab_shadowRadius="1dp"
+                        android:layout_marginStart="8dp"
+                        app:fab_shadowXOffset="1dp"
+                        app:fab_shadowYOffset="1dp"
+                        app:fab_size="mini"
+                        app:fab_label="@string/action_delivery_order"
+                        app:fab_progress_color="#FF009688"
+                        app:fab_progress_backgroundColor="#ffffff"
+                        app:fab_progress_indeterminate="false"
+                        app:fab_progress_max="100"
+                        app:fab_progress_showBackground="true"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="right"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.github.clans.fab.FloatingActionMenu
+                    android:id="@+id/action_order"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    fab:menu_fab_size="mini"
+                    fab:menu_showShadow="true"
+                    fab:menu_shadowColor="#66000000"
+                    fab:menu_shadowRadius="4dp"
+                    fab:menu_shadowXOffset="1dp"
+                    fab:menu_shadowYOffset="3dp"
+                    fab:menu_colorNormal="@color/colorAccent"
+                    fab:menu_colorPressed="#E75043"
+                    fab:menu_colorRipple="#99FFFFFF"
+                    fab:menu_animationDelayPerItem="50"
+                    fab:menu_icon="@drawable/fab_add"
+                    fab:menu_buttonSpacing="0dp"
+                    fab:menu_labels_margin="0dp"
+                    fab:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
+                    fab:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+                    fab:menu_labels_paddingTop="4dp"
+                    fab:menu_labels_paddingRight="8dp"
+                    fab:menu_labels_paddingBottom="4dp"
+                    fab:menu_labels_paddingLeft="8dp"
+                    fab:menu_labels_padding="8dp"
+                    fab:menu_labels_textColor="#FFFFFF"
+                    fab:menu_labels_textSize="14sp"
+                    fab:menu_labels_cornerRadius="3dp"
+                    fab:menu_labels_colorNormal="#333333"
+                    fab:menu_labels_colorPressed="#444444"
+                    fab:menu_labels_colorRipple="#66FFFFFF"
+                    fab:menu_labels_showShadow="true"
+                    fab:menu_labels_singleLine="false"
+                    fab:menu_labels_ellipsize="none"
+                    fab:menu_labels_maxLines="-1"
+                    fab:menu_labels_position="left"
+                    fab:menu_openDirection="up"
+                    fab:menu_backgroundColor="@android:color/transparent"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
